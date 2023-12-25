@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img id="main_fon" src="./images/Billie Eilish - Bellyache.jpg" alt="" />
+    <div class="text">
+      <marquee id="marquee" class="marquee" behavior="" direction=""
+        >Qo'shiq nomi</marquee
+      >
+      <div class="img_volume">
+        <img id="music_img" class="img" alt="" />
+        <input onclick="volume_func()" id="volume" class="rote" type="range" />
+      </div>
+      <div id="d_flex" class="d_flex5">
+        <p id="current" class="pou">00:00</p>
+        <input
+          onclick="play_going_func()"
+          id="play_going"
+          class="clo"
+          type="range"
+        />
+        <p id="duration" class="pou">00:00</p>
+      </div>
+      <div class="d_flex">
+        <span onclick="prev()" class="icon material-symbols-outlined">
+          skip_previous
+        </span>
+        <span
+          onclick="play_func()"
+          id="play"
+          class="play_puse icon material-symbols-outlined"
+          >play_circle
+        </span>
+        <span onclick="next()" class="icon material-symbols-outlined">
+          skip_next
+        </span>
+      </div>
+      <div class="d_flex1">
+        <span class="icon1 material-symbols-outlined"> repeat </span>
+        <span class="icon1 material-symbols-outlined"> shuffle </span>
+        <span class="icon1 material-symbols-outlined"> queue_music </span>
+      </div>
+    </div>
+    <audio id="audio"></audio>
+    <script src="./index.js"></script>
+  </body>
+</html>
